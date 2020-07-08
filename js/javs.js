@@ -1,36 +1,29 @@
-"use strict";
+'use sctrict';
+ 
+// let a = "Kostya";
+// let b = "Gor";
+// const ab = (a,b) => a+b;
+// console.log(ab(a,b));
 
-let personalMovieDB = {
-    count: 0,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+/*methods*/
+const str = 'TEst';
+//console.log(`Сейчас я провожу ${str}`);
 
-for(let i = 0; i < 2; i++){
-    const a = prompt('Вспомните какой-либо из просмотренных фильмов и напишите название фильма'),
-          b = +prompt('Поставьте ему оценку от 0 до 10');
+console.log(`${str.toUpperCase()} и ${str.toLowerCase()}`);
 
-    if(a != null && b != null && a != '' && b != '' && a.length < 50){
-        personalMovieDB.movies[a] = b;
-        alert('Данные введены верно');
-    } else {
-        alert('Данные ведены неверно! Название фильма должно содержать менее 50ти символов и более 0');
-        i--;
-    }
-}
+let fruit ="Some fruit";
 
-if(personalMovieDB.count < 10){
-    console.log('Просмотрено довольно мало фильмов');
-}
-else if(personalMovieDB.count >= 10 && 30 <= personalMovieDB.count){
-    console.log('Неплохой пулл фильмов!');
-} 
-else if(personalMovieDB.count > 30) {
-    console.log('Да ты киномонстр! Столько фильмов... ');
-} else {
-    console.log('Ошибка в ведении кол-ва фильмов.')
-}
+console.log(fruit.indexOf("fruit")); 
+//Покажет цифру 5, фрут начинается после 5го символа
+// Если же слово не найдет, (при поиске другого слова) то значение будет "-1"
 
-console.log(personalMovieDB);
+const logg = 'Hello world';
+console.log(logg.slice());
+// Первое значение указывает откуда начать, второе где закончить вырезание строки.
+
+console.log(logg.substr(6,4));//Откуда начать и сколько символов вырезать
+
+let numb = "12.4px";
+console.log(numb.parseInt()); //12
+console.log(numb.parseFloat());//12.4
+
