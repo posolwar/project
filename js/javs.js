@@ -1,20 +1,24 @@
 "use strict";
-const numberOfFilms = +prompt('Сколько фильмов Вы уже посмотрели?','');
+const number = 10;
 
-let personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
 
-const lastMovie = prompt('Какой последний фильмы Вы смотрели?'),
-      assessmentMovie = +prompt('Как вы его оцениваете по десятибальной шкале?'),
-      nextLastMovie = prompt('Назовите еще один фильм'),
-      nextAssessmentMovie = +prompt('Как оцените его?');
+if(number < 10)
+    console.log('so small');
+else if(number > 10)
+    console.log('so big');
+else
+    console.log('ok!');
 
-personalMovieDB.movies[lastMovie]=assessmentMovie;
-personalMovieDB.movies[nextLastMovie]=nextAssessmentMovie;
+(number == 10) ? console.log('ok#2') : console.log('not ok');
 
-console.log(personalMovieDB);
+switch(number) {
+    case 10:
+        console.log('it is 10');
+        break;
+    case 9:
+        console.log('it is 9');
+        break;
+    default:
+        console.log('it is not 9 and 10');
+        break;
+}
