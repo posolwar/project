@@ -1,24 +1,20 @@
 "use strict";
-const number = 10;
 
+let num = 50;
 
-if(number < 10)
-    console.log('so small');
-else if(number > 10)
-    console.log('so big');
-else
-    console.log('ok!');
+// while (num <= 55){
+//     console.log(num);
+//     num++;
+// }
 
-(number == 10) ? console.log('ok#2') : console.log('not ok');
+// do{
+//     console.log(num);
+//     num++;
+// }
+// while (num <= 55);
 
-switch(number) {
-    case 10:
-        console.log('it is 10');
-        break;
-    case 9:
-        console.log('it is 9');
-        break;
-    default:
-        console.log('it is not 9 and 10');
-        break;
+for(let i = 1; i < 8; i++){
+    if(i === 6) break; // заканчивает for
+    else if(i === 3) continue; //Пропускает цикл
+    console.log(i);
 }
