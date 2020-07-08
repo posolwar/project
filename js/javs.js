@@ -20,4 +20,17 @@ for(let i = 0; i < 2; i++){
         i--;
     }
 }
+
+if(personalMovieDB.count < 10){
+    console.log('Просмотрено довольно мало фильмов');
+}
+else if(personalMovieDB.count >= 10 && 30 <= personalMovieDB.count){
+    console.log('Неплохой пулл фильмов!');
+} 
+else if(personalMovieDB.count > 30) {
+    console.log('Да ты киномонстр! Столько фильмов... ');
+} else {
+    console.log('Ошибка в ведении кол-ва фильмов.')
+}
+
 console.log(personalMovieDB);
