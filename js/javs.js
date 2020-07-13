@@ -1,26 +1,20 @@
 "use strict";
 
-let arr = [1,222,33,4,15,6];
-arr.sort((a,b) => a - b);
+const soldier = {
+    health: 400,
+    armor: 100,
+    sayHello: function() {
+        console.log('Hello');
+    }
+};
 
-// arr.pop();
+const john = {
+    health:100
+};
 
-// console.log(arr);
+// john.__proto__ = soldier;
+Object.setPrototypeOf(john,soldier); // идентично предыдущей записи
 
-// for (let i = 0; i < arr.length; i++){
-//     console.log(arr[i]);
-// }
 
-// for (let value of arr){
-//     console.log(value);
-// }
+john.sayHello();
 
-// arr.forEach(function(item, index, puth){
-//     console.log(index, item);
-// });
-
-console.log( arr);
-
-// const str = prompt("", "");
-// const products = str.split(", ");
-// console.log(products.join('-товар '));
