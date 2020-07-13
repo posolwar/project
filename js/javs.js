@@ -1,51 +1,26 @@
 "use strict";
 
-const options = {
-    name: 'test',
-    width: 1024,
-    height: 1024,
-    colors: {
-        border: 'black',
-        bg: 'red'
-    },
-    makeTest: function() {
-        console.log('text');
-    }
-};
+let arr = [1,222,33,4,15,6];
+arr.sort((a,b) => a - b);
 
-const {width,height} = options;
-console.log(width);
-// console.log(options.colors);"use strict";
+// arr.pop();
 
-const options = {
-    name: 'test',
-    width: 1024,
-    height: 1024,
-    colors: {
-        border: 'black',
-        bg: 'red'
-    },
-    makeTest: function() {
-        console.log('text');
-    }
-};
+// console.log(arr);
 
-const {width,height} = options;
-console.log(width);
-// console.log(options.colors);
+// for (let i = 0; i < arr.length; i++){
+//     console.log(arr[i]);
+// }
 
-// delete options.name;
+// for (let value of arr){
+//     console.log(value);
+// }
 
-// console.log(options);
+// arr.forEach(function(item, index, puth){
+//     console.log(index, item);
+// });
 
-for (let key in options){
-    console.log(`Свойство ${key} имеет значение ${options[key]}`);
-}
+console.log( arr);
 
-// delete options.name;
-
-// console.log(options);
-
-for (let key in options){
-    console.log(`Свойство ${key} имеет значение ${options[key]}`);
-}
+// const str = prompt("", "");
+// const products = str.split(", ");
+// console.log(products.join('-товар '));
