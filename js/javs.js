@@ -1,29 +1,51 @@
-'use sctrict';
- 
-// let a = "Kostya";
-// let b = "Gor";
-// const ab = (a,b) => a+b;
-// console.log(ab(a,b));
+"use strict";
 
-/*methods*/
-const str = 'TEst';
-//console.log(`Сейчас я провожу ${str}`);
+const options = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red'
+    },
+    makeTest: function() {
+        console.log('text');
+    }
+};
 
-console.log(`${str.toUpperCase()} и ${str.toLowerCase()}`);
+const {width,height} = options;
+console.log(width);
+// console.log(options.colors);"use strict";
 
-let fruit ="Some fruit";
+const options = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red'
+    },
+    makeTest: function() {
+        console.log('text');
+    }
+};
 
-console.log(fruit.indexOf("fruit")); 
-//Покажет цифру 5, фрут начинается после 5го символа
-// Если же слово не найдет, (при поиске другого слова) то значение будет "-1"
+const {width,height} = options;
+console.log(width);
+// console.log(options.colors);
 
-const logg = 'Hello world';
-console.log(logg.slice());
-// Первое значение указывает откуда начать, второе где закончить вырезание строки.
+// delete options.name;
 
-console.log(logg.substr(6,4));//Откуда начать и сколько символов вырезать
+// console.log(options);
 
-let numb = "12.4px";
-console.log(numb.parseInt()); //12
-console.log(numb.parseFloat());//12.4
+for (let key in options){
+    console.log(`Свойство ${key} имеет значение ${options[key]}`);
+}
 
+// delete options.name;
+
+// console.log(options);
+
+for (let key in options){
+    console.log(`Свойство ${key} имеет значение ${options[key]}`);
+}
